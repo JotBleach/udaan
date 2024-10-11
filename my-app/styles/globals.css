@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Brandon-Grotesque';
+    font-weight: 400;
+    src: url('/fonts/brandon-grotesque-thin.ttf');
+
+}
+@font-face {
+    font-family: 'Brandon-Grotesque';
+    font-weight: 500;
+    src: url('/fonts/brandon-grotesque-light.ttf');
+
+}
+@font-face {
+    font-family: 'lulo-clean';
+    src: url('/fonts/lulo-clean.ttf');
+}
+
+
 .custom-screen {
     @apply max-w-screen-xl mx-auto px-4 md:px-8;
 }

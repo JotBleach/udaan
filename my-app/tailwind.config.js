@@ -5,13 +5,24 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily:{
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'udaanpurple': '#201431',
+      'udaanpurplelight': "#d8b4fe",
+      'white': '#ffffff',
+      'black': '#000000',
+      'overlay': '#6B21A8'
+    },
+    fontFamily: {
       udaanfont: ['Anurati'],
-      udaanfontsm: ['Intro']
+      udaanfontsm: ['Brandon-Grotesque'],
+      luloclean: ['lulo-clean']
     },
     extend: {
       backgroundImage: {
-        'hero-pattern':"url('/Foellinger.jpg')"
+        'hero-pattern':"url('/Foellinger.jpg')",
+        'udaan-letters':"url('/UdaanLogoWords.png')"
       }
     },
   },
