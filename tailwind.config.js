@@ -21,8 +21,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern':"url('${process.env.NEXT_PUBLIC_BASE_PATH}/Foellinger.jpg')",
-        'udaan-letters':"url('${process.env.NEXT_PUBLIC_BASE_PATH}/UdaanLogoWords.png')"
+        'hero-pattern':"url('/JotBleach.github.io/Foellinger.jpg')",
+        'udaan-letters':"url('/JotBleach.github.io/UdaanLogoWords.png')"
       }
     },
   },
