@@ -8,12 +8,12 @@ const nextConfig = {
   /**
    * Set the base path to match the GitHub Pages repository name.
    */
-  basePath: "/JotBleach.github.io", // Set to your GitHub repository name or the specific subdirectory
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '', // Set to your GitHub repository name or the specific subdirectory
   
   /**
    * Set asset prefix for static files.
    */
-  assetPrefix: "/JotBleach.github.io", // Ensures assets are loaded from the correct path
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '/', // Ensures assets are loaded from the correct path
 
   /**
    * Disable server-based image optimization for static export.

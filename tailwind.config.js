@@ -12,6 +12,7 @@ module.exports = {
       'udaanpurplelight': "#d8b4fe",
       'white': '#ffffff',
       'black': '#000000',
+      'green': '#78e371',
       'overlay': '#6B21A8'
     },
     fontFamily: {
@@ -21,8 +22,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern':"url('/JotBleach.github.io/Foellinger.jpg')",
-        'udaan-letters':"url('/JotBleach.github.io/UdaanLogoWords.png')"
+        'hero-pattern':"url('/Foellinger.jpg')",
+        'udaan-letters':"url('/UdaanLogoWords.png')"
       }
     },
   },
