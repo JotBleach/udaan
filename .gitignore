@@ -162,3 +162,6 @@ cython_debug/
 #.idea/
 /my-app/node_modules
 /my-app/.next
+/.next
+/node_modules
+/out
