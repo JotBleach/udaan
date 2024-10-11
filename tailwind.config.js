@@ -21,8 +21,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern':"url('/Foellinger.jpg')",
-        'udaan-letters':"url('/UdaanLogoWords.png')"
+        'hero-pattern':"url('${process.env.NEXT_PUBLIC_BASE_PATH}/Foellinger.jpg')",
+        'udaan-letters':"url('${process.env.NEXT_PUBLIC_BASE_PATH}/UdaanLogoWords.png')"
       }
     },
   },

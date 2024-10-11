@@ -5,18 +5,18 @@
 @font-face {
     font-family: 'Brandon-Grotesque';
     font-weight: 400;
-    src: url('/fonts/brandon-grotesque-thin.ttf');
+    src: url('${process.env.NEXT_PUBLIC_BASE_PATH}/fonts/brandon-grotesque-thin.ttf');
 
 }
 @font-face {
     font-family: 'Brandon-Grotesque';
     font-weight: 500;
-    src: url('/fonts/brandon-grotesque-light.ttf');
+    src: url('${process.env.NEXT_PUBLIC_BASE_PATH}/fonts/brandon-grotesque-light.ttf');
 
 }
 @font-face {
     font-family: 'lulo-clean';
-    src: url('/fonts/lulo-clean.ttf');
+    src: url('${process.env.NEXT_PUBLIC_BASE_PATH}/fonts/lulo-clean.ttf');
 }
 
 
