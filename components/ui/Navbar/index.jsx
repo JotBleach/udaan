@@ -13,6 +13,7 @@ const Navbar = () => {
         { title: "About Us", path: "#aboutus" },
         { title: "Socials", path: "#socials" },
         { title: "Our Crew", path: "/crew" },
+        { title: "Sponsors", path: "/sponsors" },
     ];
 
     useEffect(() => {
@@ -65,7 +66,7 @@ const Navbar = () => {
                             {
                                 navigation.map((item, idx) => (
                                     // Conditionally render "Socials" and "About Us"
-                                    (pathname !== '/crew' || (item.path !== '#aboutus' && item.path !== '#socials')) && (
+                                    ((pathname !== '/crew' && pathname !== '/sponsors')|| (item.path !== '#aboutus' && item.path !== '#socials')) && (
                                         <li key={idx} className="duration-150 hover:text-udaanpurplelight">
                                             <Link href={item.path} className="block">
                                                 {item.title}
