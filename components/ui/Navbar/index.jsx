@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
-import Brand from '../Brand'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import Brand from '../Brand';
 
 const Navbar = () => {
-    const [state, setState] = useState(false)
+    const [state, setState] = useState(false);
     const router = useRouter();
     const { pathname, events } = router;
 
@@ -17,14 +17,13 @@ const Navbar = () => {
     ];
 
     useEffect(() => {
-        // Close the navbar menu on route or hash change
         const handleState = () => {
-            document.body.classList.remove("overflow-hidden")
-            setState(false)
+            document.body.classList.remove("overflow-hidden");
+            setState(false);
         };
         events.on("routeChangeStart", handleState);
         events.on("hashChangeStart", handleState);
-        
+
         return () => {
             events.off("routeChangeStart", handleState);
             events.off("hashChangeStart", handleState);
@@ -32,8 +31,23 @@ const Navbar = () => {
     }, [events]);
 
     const handleNavMenu = () => {
-        setState(!state)
-        document.body.classList.toggle("overflow-hidden")
+        setState(!state);
+        document.body.classList.toggle("overflow-hidden");
+    };
+
+    // Smooth scrolling for anchor links and scroll-to-top for Home button
+    const handleSmoothScroll = (e, path) => {
+        if (path === '/' && pathname === '/') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (path.startsWith('#')) {
+            e.preventDefault();
+            const targetId = path.slice(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     };
 
     return (
@@ -65,10 +79,14 @@ const Navbar = () => {
                         <ul className="flex flex-col justify-end items-center text-white space-y-6 md:flex md:flex-row md:space-x-6 md:space-y-0 md:text-gray-600 md:font-medium">
                             {
                                 navigation.map((item, idx) => (
-                                    // Conditionally render "Socials" and "About Us"
-                                    ((pathname !== '/crew' && pathname !== '/sponsors')|| (item.path !== '#aboutus' && item.path !== '#socials')) && (
+                                    ((pathname !== '/crew' && pathname !== '/sponsors') || 
+                                     (item.path !== '#aboutus' && item.path !== '#socials')) && (
                                         <li key={idx} className="duration-150 hover:text-udaanpurplelight">
-                                            <Link href={item.path} className="block">
+                                            <Link 
+                                                href={item.path} 
+                                                className="block"
+                                                onClick={(e) => handleSmoothScroll(e, item.path)}
+                                            >
                                                 {item.title}
                                             </Link>
                                         </li>
@@ -80,7 +98,7 @@ const Navbar = () => {
                 </nav>    
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default Navbar;
