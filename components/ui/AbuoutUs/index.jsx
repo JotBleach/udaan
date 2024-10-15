@@ -2,7 +2,7 @@ const AboutUs = () => (
     <section>
         <div id = "aboutus" className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-4 flex justify-items-center">
             <div className="bg-[url(/party_purple_overlay.png)] h-min bg-cover bg-center md:rounded-lg">
-                <div className="text-[130px] text-white text-wrap p-4 font-luloclean text-center">
+                <div className="text-[100px] md:text-[130px] text-white text-wrap p-1 md:p-4 font-luloclean text-center">
                     <h1>CHA MPA IGN, IL</h1>
                 </div>
             </div>

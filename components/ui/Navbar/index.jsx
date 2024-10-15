@@ -51,9 +51,9 @@ const Navbar = () => {
     };
 
     return (
-        <header className="w-full fixed top-0 px-4 pt-1 left-0 z-50">
-            <div className='w-full bg-udaanpurple rounded-lg drop-shadow-2xl'>
-                <nav className="flex items-center justify-between custom-screen mx-auto px-4 py-2 md:flex-row md:py-3 md:px-8">
+        <header className="w-full fixed top-0 md:px-4 md:pt-1 left-0 z-50">
+            <div className='w-full bg-udaanpurple md:rounded-lg drop-shadow-2xl'>
+                <nav className="flex items-center justify-between custom-screen mx-auto px-4 py-2 md:flex-row">
                     <div className="flex items-center justify-between w-full md:w-auto">
                         <Brand />
                         <div className="md:hidden">

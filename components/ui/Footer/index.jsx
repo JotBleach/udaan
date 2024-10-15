@@ -15,15 +15,12 @@ const socialInfo = [
 
 const Footer = () => (
     <footer>
-        <div className="custom-screen pt-16">
-            <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
-                <p className="text-gray-600">UIUC Udaan</p>
-                <div className="flex items-center text-gray-400">
-                    <div className="">
-                        <p className="text-right">Foellinger Auditorium</p>
-                        <p className="text-right">709 S Mathews Ave, Urbana, IL 61801</p>
-                    </div>
-                    
+        <div className="custom-screen">
+            <div className="mt-10 py-10 border-t items-top justify-between flex">
+                <p className="text-gray-600 text-sm max-w-max">UIUC Udaan</p>
+                <div className="items-right text-sm max-w-max">
+                    <p className="text-right">Foellinger Auditorium</p>
+                    <p className="text-right">709 S Mathews Ave, Urbana, IL 61801</p>
                 </div>
             </div>
         </div>
