@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
         <>
             <Head>
                 <title>Udaan</title>
-                <meta name='description' content='Blinder making it simple for you to build and grow your SaaS applications, or any business idea' />
+                <meta name='description' content="Udaan (meaning flight) is the University of Illinois' premier Bollywood Fusion Dance competition where collegiate dance teams from all over the nation will come together on UIUCs campus not only to compete for a title, but also to spread awareness of South Asian Culture. As an organization, we propel the next generation of trailblazers and fly high with our spirit for dance"/>
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
                 <link rel='icon' href='/UdaanLogo.png' />
             </Head>
