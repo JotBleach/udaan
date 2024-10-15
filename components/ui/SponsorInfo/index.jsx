@@ -1,8 +1,8 @@
 const SponsorInfo = () => (
     <section>
-        <div className="px-4 pt-24">
-            <div className="grid grid-rows-1 grid-cols-1 px-4 mt-2 h-96 bg-[url('/uiuc.jpg')] bg-cover bg-center rounded-lg flex items-center justify-items-center">
-                <div className="font-luloclean text-white text-9xl">
+        <div className="pt-[72px] md:pt-24">
+            <div className="grid grid-rows-1 grid-cols-1 px-4 h-96 bg-[url('/uiuc.jpg')] bg-cover bg-center md:rounded-lg flex items-center justify-items-center">
+                <div className="font-luloclean text-white text-4xl md:text-9xl">
                     <h1>
                         SPONSORS
                     </h1>
@@ -67,24 +67,24 @@ const SponsorInfo = () => (
                         </p>
                     </button>
                 </div>
-                <div className="px-20 pt-5">
+                <div className="md:px-20 pt-5">
                     <p className="font-udaanfontsm font-[500] text-center">
                         In our highest package offer, you will receive dedicated volunteer hours, discounted future sponsorship with Udaan, representative speech and infomercial during intermission, 1-page dedicated to company's mission, logo features, booth space, and social media posts. Other offers may be added.
                     </p>
                 </div>
-                <div className="px-20 pt-5">
+                <div className="md:px-20 pt-5">
                     <p className="font-udaanfontsm font-[500] text-center">
                         In our Up and Away package, you will receive 1-page dedicated to company's mission, features on digital media videos for Udaan, infomercial played during intermission, logo features, booth space, and social media posts.
                     </p>
                 </div>
-                <div className="px-20 pt-5">
+                <div className="md:px-20 pt-5">
                     <p className="font-udaanfontsm font-[500] text-center">
                         In our fly package, you will receive features on digital media videos for Udaan, infomercial played during intermission, logo features, booth space, and social media posts.
                     </p>
                 </div>
             </div>
             <div className="flex justify-center">
-                <div className="grid grid-flow-rows grid-cols-2 auto-rows-min w-4/6 flex justify-items-center">
+                <div className="grid grid-flow-rows grid-cols-2 auto-rows-min max-sm:w-full md:w-4/6 flex justify-items-center">
                     <div>
                         <svg viewBox="21.5 16.5 157.009 167" height="75" width="75" xmlns="http://www.w3.org/2000/svg">
                             <g>
@@ -117,12 +117,12 @@ const SponsorInfo = () => (
                             </p>
                         </button>
                     </div>
-                    <div className="px-32 pt-5">
+                    <div className="md:px-20 pt-5">
                         <p className="font-udaanfontsm font-[500] text-center">
                             In our glide package, you will receive logo features, booth space, and social media posts.
                         </p>
                     </div>
-                    <div className="px-32 pt-5">
+                    <div className="md:px-20 pt-5">
                         <p className="font-udaanfontsm font-[500] text-center">
                             In our flutter package, you will receive a logo features on website and social media posts.
                         </p>

@@ -16,7 +16,7 @@ const socialInfo = [
 const Footer = () => (
     <footer>
         <div className="custom-screen">
-            <div className="mt-10 py-10 border-t items-top justify-between flex">
+            <div className="mt-10 py-2 md:py-10 border-t items-top justify-between flex">
                 <p className="text-gray-600 text-sm max-w-max">UIUC Udaan</p>
                 <div className="items-right text-sm max-w-max">
                     <p className="text-right">Foellinger Auditorium</p>
