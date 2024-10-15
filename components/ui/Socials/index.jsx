@@ -42,7 +42,7 @@ const Socials = () => {
     ]
 
     return (
-        <SectionWrapper>
+
             <div id="socials" className="custom-screen text-gray-600">
                 <ul className="grid grid-rows-2 gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="row-start-1 col-span-3 place-content-center text-center">
@@ -65,7 +65,6 @@ const Socials = () => {
                     }
                 </ul>
             </div>
-        </SectionWrapper>
     )
 }
 

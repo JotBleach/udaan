@@ -11,7 +11,7 @@ const Hero = () => (
                     </p>
                 </div>
                 <div className="row-start-5 col-start-2 self-center">
-                    <p className="font-udaanfontsm text-white font-extrabold text-5xl text-center align-text-middle">
+                    <p className="font-udaanfontsm text-white font-extrabold text-2xl text-center align-text-middle md:text-5xl">
                         January 25th 2025
                     </p>
                 </div>
