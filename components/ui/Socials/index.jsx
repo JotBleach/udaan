@@ -1,5 +1,3 @@
-import SectionWrapper from "../../SectionWrapper"
-
 const Socials = () => {
 
     const socials = [

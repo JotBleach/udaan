@@ -166,3 +166,4 @@ cython_debug/
 /node_modules
 /out
 public/.DS_Store
+.DS_Store
