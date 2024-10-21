@@ -17,7 +17,11 @@ const Footer = () => (
     <footer>
         <div className="custom-screen">
             <div className="mt-10 py-2 md:py-10 border-t items-top justify-between flex">
-                <p className="text-gray-600 text-sm max-w-max">UIUC Udaan</p>
+                
+                <div className="items-left text-sm max-w-max">
+                    <p className="text-gray-600 text-sm max-w-max">UIUC Udaan</p>
+                    <p className="text-gray-600 text-sm max-w-max">Created by Aryan Endal</p>
+                </div>
                 <div className="items-right text-sm max-w-max">
                     <p className="text-right">Foellinger Auditorium</p>
                     <p className="text-right">709 S Mathews Ave, Urbana, IL 61801</p>
